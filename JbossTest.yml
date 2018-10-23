@@ -4,5 +4,5 @@
   tasks:
     - name: Stop service jboss
       service:
-       name: jboss-eap-standalone
-       state: restarted
+       name: jboss-as-standalone
+       state: stopped
