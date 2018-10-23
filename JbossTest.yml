@@ -5,4 +5,4 @@
     - name: Stop service jboss
       service:
        name: jboss-as-standalone
-       state: stopped
+       state: started
