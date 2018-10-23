@@ -5,4 +5,4 @@
     - name: Stop service jboss
       service:
        name: jboss-eap-standalone
-       state: stopped
+       state: restarted
