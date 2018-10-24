@@ -6,3 +6,8 @@
       service:
        name: jboss-as-standalone
        state: stopped
+    - name: send a message to chat in playbook
+      telegram:
+      token: 'bot765291265:AAFC-buv3Pd_Mu2fwReeLlMhfaiRop5WN_4'
+      chat_id: -258533565
+      msg: Stop service jboss
