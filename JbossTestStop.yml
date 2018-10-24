@@ -1,9 +1,13 @@
--name: Test telegram module
-  hosts: localhost
-  connection: local
+---
+- hosts: localhost
+  remote_user: root
   tasks:
-    - name: Send test message
+    - name: Stop service jboss
+      service:
+       name: jboss-as-standalone
+       state: stopped
+    - name: telegram
       telegram:
-        token: "bot765291265:AAFC-buv3Pd_Mu2fwReeLlMhfaiRop5WN_4"
+        token: 'bot765291265:AAFC-buv3Pd_Mu2fwReeLlMhfaiRop5WN_4'
         chat_id: -258533565
-        msg: "Message sent from Ansible playbook :)"
+        msg: HOLA
