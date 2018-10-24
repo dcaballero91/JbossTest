@@ -3,6 +3,4 @@
   remote_user: root
   tasks:
     - name: Start service httpd
-      service:
-       name: httpd24-httpd
-       state: started
+      shell: /etc/init.d/httpd24-httpd stop
