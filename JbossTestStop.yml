@@ -2,8 +2,9 @@
 - hosts: localhost
   remote_user: root
   tasks:
-    - name: telegram
-      telegram:
-        token: bot765291265:AAFC-buv3Pd_Mu2fwReeLlMhfaiRop5WN_4
-        chat_id: -258533565
-        msg: Bajando Jboss
+    - name: send a message
+      shell:  /etc/ansible/JbossTest/sms.sh
+    - name: Stop service jboss
+      service:
+       name: jboss-as-standalone
+       state: stopped
