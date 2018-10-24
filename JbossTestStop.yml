@@ -6,8 +6,12 @@
       service:
        name: jboss-as-standalone
        state: stopped
-    - name: send a message to chat in playbook
-      telegram:
-      token: 'bot765291265:AAFC-buv3Pd_Mu2fwReeLlMhfaiRop5WN_4'
-      chat_id: -258533565
-      msg: Stop service jboss
+    - name: Test telegram module
+      hosts: localhost
+      connection: local
+    tasks:
+      - name: Send test message
+        telegram:
+        token: "bot304017237:AAHpKXZBaw_wOF3H-ryhWl3F3wqIVP_Zqf8"
+        chat_id: 6343788
+        msg: "Message sent from Ansible playbook :)"
