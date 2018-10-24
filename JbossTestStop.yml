@@ -7,8 +7,6 @@
        name: jboss-as-standalone
        state: stopped
     - name: Test telegram module
-      hosts: localhost
-      connection: local
     tasks:
       - name: Send test message
         telegram:
