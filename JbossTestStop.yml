@@ -1,11 +1,4 @@
 ---
-- hosts: JbossTest
-  remote_user: root
-  tasks:
-    - name: Stop service jboss
-      service:
-       name: jboss-as-standalone
-       state: stopped
 - hosts: localhost
   remote_user: root
   tasks:
@@ -13,4 +6,4 @@
       telegram:
         token: 'bot765291265:AAFC-buv3Pd_Mu2fwReeLlMhfaiRop5WN_4'
         chat_id: -258533565
-        msg: HOLA
+        msg: Bajando Jboss
