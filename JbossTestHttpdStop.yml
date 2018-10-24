@@ -4,5 +4,5 @@
   tasks:
     - name: Start service httpd
       service:
-       name: httpd
+       name: httpd24-httpd
        state: started
