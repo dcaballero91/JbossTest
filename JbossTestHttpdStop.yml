@@ -2,5 +2,5 @@
 - hosts: ApacheTest 
   remote_user: root
   tasks:
-    - name: Start service httpd
+    - name: Stop service httpd
       shell: /etc/init.d/httpd24-httpd stop
