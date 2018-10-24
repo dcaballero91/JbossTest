@@ -6,7 +6,7 @@
       service:
        name: jboss-as-standalone
        state: stopped
-- hosts: 10.118.1.59
+- hosts: localhost
   remote_user: root
   tasks:
     - name: telegram
