@@ -1,5 +1,5 @@
 ---
-- hosts: ApacheTest
+- hosts: localhost
   remote_user: root
   tasks:
     - name: Subiendo Pagina
