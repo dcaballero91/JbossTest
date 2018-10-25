@@ -1,9 +1,9 @@
 ---
-- hosts: ApacheTest
+- hosts: localhost
   remote_user: root
   tasks:
     - name: Bajando Pagina
       shell: /etc/ansible/JbossTest/pag_mantenimiento_down.sh 
     - name: Notificacion 
-      shell: /etc/ansible/JbossTest/smsUP.sh
+      shell: /etc/ansible/JbossTest/smsDOWN.sh
    
