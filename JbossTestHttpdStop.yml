@@ -2,6 +2,7 @@
 - hosts: ApacheTest 
   remote_user: root
   tasks:
+    - name: Stop service httpd
     - service:
       name: httpd
       state: stopped

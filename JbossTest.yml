@@ -1,8 +1,0 @@
----
-- hosts: JbossTest 
-  remote_user: root
-  tasks:
-    - name: Stop service jboss
-      service:
-       name: jboss-as-standalone
-       state: started
