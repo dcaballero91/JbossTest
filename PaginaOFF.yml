@@ -4,6 +4,8 @@
   tasks:
     - name: Bajando Pagina
       shell: /etc/ansible/JbossTest/pag_mantenimiento_down.sh 
-    - name: Notificacion 
+    - name: Notificacion Telegram 
       shell: /etc/ansible/JbossTest/smsDOWN.sh
+    - name: Notificacion SMS
+      shell: /etc/ansible/JbossTest/notificacionLoteDown.sh
    

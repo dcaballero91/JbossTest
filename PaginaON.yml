@@ -6,4 +6,5 @@
       shell: /etc/ansible/JbossTest/pag_mantenimiento_up.sh 
     - name: Notificacion 
       shell: /etc/ansible/JbossTest/smsUP.sh
-   
+    - name: Notificacion SMS
+      shell: /etc/ansible/JbossTest/notificacionLoteUp.sh
