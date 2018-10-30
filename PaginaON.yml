@@ -3,8 +3,9 @@
   remote_user: root
   tasks:
     - name: Subiendo Pagina
-      shell: /etc/ansible/JbossTest/pag_mantenimiento_up.sh 
-    - name: Notificacion 
+      shell: /etc/ansible/JbossTest/pag_mantenimiento_up.sh
+    - name: Notificacion Telegram
       shell: /etc/ansible/JbossTest/smsUP.sh
-    - name: Notificacion SMS
+    - name: Notificacino SMS
       shell: /etc/ansible/JbossTest/notificacionLoteUp.sh
+      
